@@ -20,3 +20,9 @@ def location(request):
         "title": 'titre de la vue'
     }
     return render(request, "ModuleWebsite/about-us-locations.html", context)
+
+def drilling(request):
+    context = {
+        "title": 'titre de la vue'
+    }
+    return render(request, "ModuleWebsite/drilling.html", context)
