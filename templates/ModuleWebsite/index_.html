@@ -62,8 +62,8 @@
                         <div class="col-auto d-flex align-items-center">
                             <nav>
                                 <ul class="list list-unstyled d-flex text-1 mb-0">
-                                    <li class="mb-0"><a href="{% url 'about_us' %}#talkus" class="alternative-font-4 text-decoration-none text-3-5 font-weight-bold">PLAN YOUR VISIT</a></li>
-                                    <li class="mb-0 ms-4-5 d-none d-sm-block"><a href="{% url 'events' %}" class="alternative-font-4 text-decoration-none text-3-5 font-weight-bold">CALENDAR</a></li>
+{#                                    <li class="mb-0"><a href="{% url 'about_us' %}#talkus" class="alternative-font-4 text-decoration-none text-3-5 font-weight-bold">PLAN YOUR VISIT</a></li>#}
+{#                                    <li class="mb-0 ms-4-5 d-none d-sm-block"><a href="{% url 'events' %}" class="alternative-font-4 text-decoration-none text-3-5 font-weight-bold">CALENDAR</a></li>#}
                                 </ul>
                             </nav>
                             <div class="header-nav-features d-none d-md-block ms-5-5">
@@ -102,7 +102,7 @@
                                         <ul class="nav nav-pills" id="mainNav">
                                             <li><a class="nav-link active" href="{% url 'home' %}">Home</a></li>
                                             <li><a class="nav-link" href="{% url 'drilling' %}">Drilling</a></li>
-                                            <li><a class="nav-link" href="{% url 'about_us_locations' %}">Locations</a></li>
+                                            <li><a class="nav-link" href="{% url 'safety' %}">Safety and quality</a></li>
 {#                                            <li class="dropdown dropdown-full-color dropdown-primary">#}
 {#                                                <a class="dropdown-item dropdown-toggle" href="{% url 'about_us' %}">About Us</a>#}
 {#                                                <ul class="dropdown-menu">#}
@@ -202,7 +202,7 @@
                                 <h2 class="font-weight-bold">Amazone Service,</h2>
                                 <p>Welcome to Amazone Service SARL, where every drill, every project, and every partnership is driven by a dedication to excellence.</p>
  	                            <p>Amazone Service SARL is a leading player in the exploratory drilling sector, committed to innovation and excellence. It the values of accuracy, reliability, and the cutting-edge expertise that defines our policies.</p>
-                                <a href="{% url 'about_us' %}" class="btn btn-primary custom-btn-style-1 text-uppercase mt-4">Call us</a>
+                                <a href="tel:+243844429444" class="btn btn-primary custom-btn-style-1 text-uppercase mt-4">Call us</a>
                             </div>
                         </div>
                     </div>
@@ -431,20 +431,32 @@
 {#                        </div>#}
 {#                    </div>#}
 {#                </section>#}
+               				<section id="talkus" class="section section-no-border bg-color-light m-0">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 mb-4 mb-md-0">
+								<h2 class="font-weight-bold">More about us</h2>
+								<p>    Amazone Service SARL was founded in 2020, headquartered in Durba, with a rich history of successful drilling projects globally. </p>
+								<p>A diverse team of experienced professionals with backgrounds in geology, engineering, and environmental science. </p>
+								<p>Our employees are 90% Congolese.</p>
+							</div>
+						</div>
+					</div>
+				</section>
 
-                <section class="section section-tertiary section-no-border m-0">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-10">
-                                <span class="custom-secondary-font font-weight-bold custom-text-color-1 text-4">Contact</span>
-                                <h2 class="font-weight-bold custom-text-color-1 m-0">We implement environment friendly drilling operations by using low-impact technologies that reduce the environmental footprint of drilling activities, <br>We also address on-site waste management, optimize systems to fit the needs of specific development sites, and provide stewardship of the environment.</h2>
-                            </div>
-                            <div class="col-lg-2 mt-4 mt-lg-0">
-                                <a href="{% url 'about_us' %}" class="btn btn-primary custom-btn-style-1 text-uppercase">Join us</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+{#                <section class="section section-tertiary section-no-border m-0">#}
+{#                    <div class="container">#}
+{#                        <div class="row align-items-center">#}
+{#                            <div class="col-lg-10">#}
+{#                                <span class="custom-secondary-font font-weight-bold custom-text-color-1 text-4">Contact</span>#}
+{#                                <h2 class="font-weight-bold custom-text-color-1 m-0">We implement environment friendly drilling operations by using low-impact technologies that reduce the environmental footprint of drilling activities, <br>We also address on-site waste management, optimize systems to fit the needs of specific development sites, and provide stewardship of the environment.</h2>#}
+{#                            </div>#}
+{#                            <div class="col-lg-2 mt-4 mt-lg-0">#}
+{#                                <a href="{% url 'about_us' %}" class="btn btn-primary custom-btn-style-1 text-uppercase">Join us</a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </section>#}
 
 {#                <section class="section section-no-border custom-position-relative custom-overflow-hidden p-0 m-0">#}
 {#                    <div class="custom-view-our-location text-center">#}
@@ -472,23 +484,23 @@
                                 <i class="fas fa-map-marker-alt text-color-primary custom-icon-size-1"></i>
                                 <p class="custom-text-color-2 alternative-font-4 text-3-5">
                                     <strong class="d-block text-color-light custom-secondary-font text-5-5 line-height-8 mb-1">Amazone sarl</strong>
-                                    DRC, </br>Suite 100 New York, NY
+                                    DRC, </br>Haut-uélé, Doko (durba centre) <br> Q\Lebrun, territouire de wats. <br> Chefferie de kibali
                                 </p>
                             </div>
                             <div class="col-lg-4 custom-sm-margin-bottom-1">
                                 <i class="far fa-clock text-color-primary custom-icon-size-1"></i>
                                 <p class="custom-text-color-2 alternative-font-4 text-3-5">
-                                    <strong class="d-block text-color-light custom-secondary-font text-5-5 line-height-8 mb-1">Join us on</strong>
-                                    Sunday Worship<br>
-                                    8.00pm - 9.00pm
+                                    <strong class="d-block text-color-light custom-secondary-font text-5-5 line-height-8 mb-1">Work day</strong>
+                                    Mon - Wen<br>
+                                    8.00 am - 5.00 pm
                                 </p>
                             </div>
                             <div class="col-lg-3">
                                 <i class="fas fa-phone-volume text-color-primary custom-icon-size-1"></i>
                                 <p class="alternative-font-4 text-3-5">
                                     <strong class="d-block text-color-light custom-secondary-font text-5-5 line-height-8 mb-1">Call us now</strong>
-                                    <a href="tel:+91123456789" class="text-decoration-none custom-text-color-2">Phone : (123) 456-789</a></br>
-                                    <a href="mail:mail@example.com" class="text-decoration-none custom-text-color-2">Email : mail@example.com</a>
+                                    <a href="tel:+243844429444" class="text-decoration-none custom-text-color-2">Phone : (243) 844 429 444</a></br>
+                                    <a href="mailto:admin@arizona-drc.com" class="text-decoration-none custom-text-color-2">Email : admin@arizona-drc.com</a>
                                 </p>
                             </div>
                         </div>

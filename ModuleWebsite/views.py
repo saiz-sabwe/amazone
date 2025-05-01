@@ -21,6 +21,12 @@ def location(request):
     }
     return render(request, "ModuleWebsite/about-us-locations.html", context)
 
+def safety(request):
+    context = {
+        "title": 'titre de la vue'
+    }
+    return render(request, "ModuleWebsite/safety.html", context)
+
 def drilling(request):
     context = {
         "title": 'titre de la vue'

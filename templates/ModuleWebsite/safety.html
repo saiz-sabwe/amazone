@@ -62,7 +62,7 @@
                         <div class="col-auto d-flex align-items-center">
                             <nav>
                                 <ul class="list list-unstyled d-flex text-1 mb-0">
-{#                                    <li class="mb-0"><a href="{% url 'drilling' %}#talkus" class="alternative-font-4 text-decoration-none text-3-5 font-weight-bold">PLAN YOUR VISIT</a></li>#}
+{#                                    <li class="mb-0"><a href="{% url 'about_us_locations' %}#talkus" class="alternative-font-4 text-decoration-none text-3-5 font-weight-bold">PLAN YOUR VISIT</a></li>#}
 {#                                    <li class="mb-0 ms-4-5 d-none d-sm-block"><a href="{% url 'events' %}" class="alternative-font-4 text-decoration-none text-3-5 font-weight-bold">CALENDAR</a></li>#}
                                 </ul>
                             </nav>
@@ -101,8 +101,8 @@
                                     <nav class="collapse">
                                         <ul class="nav nav-pills" id="mainNav">
                                             <li><a class="nav-link" href="{% url 'home' %}">Home</a></li>
-                                            <li><a class="nav-link active" href="{% url 'drilling' %}">Drilling</a></li>
-                                            <li><a class="nav-link" href="{% url 'safety' %}">Safety and quality</a></li>
+                                            <li><a class="nav-link" href="{% url 'drilling' %}">drilling</a></li>
+                                            <li><a class="nav-link active" href="{% url 'safety' %}">safety and quality </a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -116,127 +116,123 @@
             </div>
         </div>
     </header>
+
 			<div role="main" class="main">
 
 				<section class="page-header page-header-modern page-header-background page-header-background-sm parallax overlay overlay-color-dark overlay-show overlay-op-1 my-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="{% static 'img/about_us.jpg' %}">
-                    <div class="container">
-                        <div class="row my-5">
-                            <div class="col-md-12 align-self-center text-center">
-                                <h1 class="text-9 text-color-light custom-secondary-font font-weight-bold mb-1">Drilling</h1>
-{#                                <p class="text-color-light custom-secondary-font text-uppercase mb-0">Drilling</p>#}
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+					<div class="container">
+						<div class="row my-5">
+							<div class="col-md-12 align-self-center text-center">
+								<h1 class="text-9 text-color-light custom-secondary-font font-weight-bold mb-1">Safety</h1>
+								<p class="text-color-light custom-secondary-font text-uppercase mb-0">and Quality</p>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				<section class="section section-no-border bg-color-light m-0">
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-7 col-sm-7">
-								<h2 class="font-weight-bold">EXPLORATORY DRILLING</h2>
-                                <p>Our agile drilling team always mobilizes quickly to meet your deadlines and schedules. Once there, they will focus on obtaining productive drilling results and, above all, on the constant achievement of the target and delivery of quality carrot and chip samples. .</p>
-								<p class="text-2">At Amazon Drilling Limited, for every project we look for opportunities to improve efficiency and reduce costs for our customers and ensure that we meet the budget. <br>We work closely with the geological team of customers, providing information on changing soil conditions, and we are therefore flexible to adapt to changes in programs drilling</p>
-							</div>
-							<div class="col-lg-5 col-sm-5 d-none d-sm-block">
+{#							<div class="col">#}
+{#								<h2 class="font-weight-bold">A place near you</h2>#}
+{#                                <p>We primarily operate in the eastern regions of the Democratic Republic of Congo (DRC), where we have developed extensive experience working in diverse geological environments. Our teams are familiar with the logistical and operational challenges specific to this area, allowing us to deliver reliable and efficient services. While eastern DRC remains our main focus, our operations are not limited to this region.</p>#}
+{#                                <p>We are fully capable of deploying our equipment and expertise across the entire DRC, including remote and hard-to-reach areas. Additionally, we are prepared to support projects in neighboring countries, leveraging our regional presence and cross-border logistics to meet client needs wherever they arise.</p>#}
+{#							</div>#}
+                            <div class="col">
+								<h2 class="font-weight-bold">Safety first</h2>
+                                <p>The safety and well being at our employees is always at the  ttoretrant at aeverytging we do, thus, our teams are prepared and trained for sale and efficient operations, we use effective work procedures and praticies to achieve performance and duality objectives</p>
+                                <ul>
+                                  <li>We assure comprehensive safety protocols to protect personnel and the environment.</li>
+                                  <li>We maintain continuous training programs ensuring a highly skilled and safety-conscious workforce.</li>
+                                  <li>We are committed to minimizing environmental impact through responsible drilling practices.</li>
+                                </ul>
 
-                            <div class="custom-box-squares">
-                                <img class="custom-cloud left-pos-2" alt src="{% static 'img/church/others/left-cloud.png' %}" />
-                                <div class="custom-big-square left-pos-2 custom-box-shadow" style="background: url('{% static 'img/slide_3.jpg' %}'); background-size: cover;"></div>
-                                <div class="custom-small-square left-pos-2 custom-box-shadow" style="background: url('{% static 'img/slide_2.jpg' %}'); background-size: cover;"></div>
-                            </div>
 							</div>
 						</div>
+
+<div class="row mt-3">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="custom-thumb-carousel bg-color-light custom-box-shadow">
+            <div class="lightbox" data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': false, 'duration': 300}}">
+
+<div class="owl-carousel owl-theme custom-arrows-style-2" data-plugin-options="{'items': 1, 'loop': false, 'nav': true, 'dots': false}">
+    {% for i in '123' %}
+    <div>
+        <a class="img-thumbnail d-block img-thumbnail-hover-icon" href="{% static 'img/about-us-location-' %}{{ forloop.counter }}.jpg">
+            <img class="img-fluid" src="{% static 'img/about-us-location-' %}{{ forloop.counter }}.jpg" alt="Church Image">
+        </a>
+    </div>
+    {% endfor %}
+</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 position-relative">
+                    <div class="custom-location">
+                        <img src="{% static 'img/church/others/pin.png' %}" alt class="img-fluid" />
+                        <h4 class="font-weight-bold custom-primary-font mb-0">DRC</h4>
+                        <p>Porto Blvd, Suite 100<br>DRC<br><a href="#">(view directions)</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 pt-4 mt-1 custom-xs-padding-1 position-relative">
+                    <span class="custom-phone custom-xs-ms-1">
+                        <strong>Phone:</strong>
+                        <a class="custom-text-color-default" href="tel:+123456789">123-456-7890</a>
+                    </span>
+                    <a class="custom-xs-ms-1" href="mailto:church@domain.com">church@domain.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="custom-thumb-carousel bg-color-light custom-box-shadow">
+            <div class="lightbox" data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': false, 'duration': 300}}">
+               <div class="owl-carousel owl-theme custom-arrows-style-2" data-plugin-options="{'items': 1, 'loop': false, 'nav': true, 'dots': false}">
+    {% for i in '456' %}
+    <div>
+        <a class="img-thumbnail d-block img-thumbnail-hover-icon" href="{% static 'img/about-us-location-' %}{{ forloop.counter|add:"3" }}.jpg">
+            <img class="img-fluid" src="{% static 'img/about-us-location-' %}{{ forloop.counter|add:"3" }}.jpg" alt="Church Image">
+        </a>
+    </div>
+    {% endfor %}
+</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 position-relative">
+                    <div class="custom-location">
+                        <img src="{% static 'img/church/others/pin.png' %}" alt class="img-fluid" />
+                        <h4 class="font-weight-bold custom-primary-font mb-0">DRC</h4>
+                        <p>Porto Blvd, Suite 100<br>DRC<br><a href="#">(view directions)</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 pt-4 mt-1 custom-xs-padding-1">
+                    <span class="custom-phone custom-xs-ms-1">
+                        <strong>Phone:</strong>
+                        <a class="custom-text-color-default" href="tel:+123456789">123-456-7890</a>
+                    </span>
+                    <a class="custom-xs-ms-1" href="mailto:church@domain.com">church@domain.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 					</div>
 				</section>
 
-
-                <section class="section bg-color-tertiary section-no-border m-0">
+                <section class="section section-tertiary section-no-border m-0">
                     <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <img src="{% static 'img/about-us-location-1.jpg' %}" alt class="img-fluid custom-border-1 custom-box-shadow" style="width: 350px; height: auto;" />
-                {#								<a href="#" class="btn btn-primary custom-btn-style-1 text-uppercase float-end mt-3">View Gallery</a>#}
-                                            </div>
-                                            <div class="col-lg-6 mb-4 mb-md-0">
-                                                <h2 class="font-weight-bold">Hands-free rod handlers</h2>
-                                                <p>With innovation as our focus, Topdrill is proud to be the first to bring hands-free operation on all rigs. This innovation has put Topdrill at the forefront of the industry and provides staff with the confidence that comes with improved rig safety. As a company, Topdrill is constantly looking at ways to minimise crew and rod interaction to improve safety and efficiency. The cup design using gravity ensures excellent inherent safety with limited potential for dropped rods and a narrow line of fire area.</p>
-                                            </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-10">
+                                <span class="custom-secondary-font font-weight-bold custom-text-color-1 text-4">Us</span>
+                                <h2 class="font-weight-bold custom-text-color-1 m-0">We implement environment friendly drilling operations</h2>
+                            </div>
+                            <div class="col-lg-2 mt-4 mt-lg-0">
+                                <a href="mailto:admin@arizona-drc.com" class="btn btn-primary custom-btn-style-1 text-uppercase">Write to us</a>
 
-                                        </div>
-                                    </div>
-
+                            </div>
+                        </div>
+                    </div>
                 </section>
-
-
-				<section id="talkus" class="section section-no-border bg-color-light m-0">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6 mb-4 mb-md-0">
-								<h2 class="font-weight-bold">Hands-free breakouts fitted to all rigs</h2>
-								<p>True hands-free breakout of drill pipe on both Reverse Circulation (Airdrill system) and Diamond Drilling rigs. This removes crew from line of fire hazards. </p>
-								<p>This innovation requires the operator to hold a deadman switch whilst engaging the slew lever. If either the switch or lever is released, the tool will stop moving automatically. This removes the need for hand tools (stillsons). </p>
-								<p>We also utilise diesel free, hydraulics run agitators and mud pumps.</p>
-							</div>
-							<div class="col-lg-6">
-								<img src="{% static 'img/about-us-location-1.jpg' %}" alt class="img-fluid custom-border-1 custom-box-shadow" style="width: 350px; height: auto;" />
-{#								<a href="#" class="btn btn-primary custom-btn-style-1 text-uppercase float-end mt-3">View Gallery</a>#}
-							</div>
-						</div>
-					</div>
-				</section>
-
-                   <section class="section bg-color-tertiary section-no-border m-0">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img src="{% static 'img/about-us-location-1.jpg' %}" alt class="img-fluid custom-border-1 custom-box-shadow" style="width: 350px; height: auto;" />
-    {#								<a href="#" class="btn btn-primary custom-btn-style-1 text-uppercase float-end mt-3">View Gallery</a>#}
-                                </div>
-                                <div class="col-lg-6 mb-4 mb-md-0">
-                                    <h2 class="font-weight-bold">Access ladders and platforms fitted to Diamond Rings</h2>
-                                    <p>A safety ladder access platform, engineered to meet Australian Standards (AS 1657 – 2013) are fitted to all Topdrill Sandvik DE880 Drill Rigs. </p>
-                                    <p>From a safety perspective, this means that 3 points of contact can be maintained at all times.</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </section>
-
-                <section id="talkus" class="section section-no-border bg-color-light m-0">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6 mb-4 mb-md-0">
-								<h2 class="font-weight-bold">Isolation Verification Tags</h2>
-								<p>Isolation saves lives. These locks and tags are positioned at the point of isolation and serve as a physical barrier to operation, and a visual reminder that if the machine is operated there is a risk of personal injury or equipment damage..</p>
-							</div>
-							<div class="col-lg-6">
-								<img src="{% static 'img/about-us-location-1.jpg' %}" alt class="img-fluid custom-border-1 custom-box-shadow" style="width: 350px; height: auto;" />
-{#								<a href="#" class="btn btn-primary custom-btn-style-1 text-uppercase float-end mt-3">View Gallery</a>#}
-							</div>
-						</div>
-					</div>
-				</section>
-                                   <section class="section bg-color-tertiary section-no-border m-0">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img src="{% static 'img/about-us-location-1.jpg' %}" alt class="img-fluid custom-border-1 custom-box-shadow" style="width: 350px; height: auto;" />
-    {#								<a href="#" class="btn btn-primary custom-btn-style-1 text-uppercase float-end mt-3">View Gallery</a>#}
-                                </div>
-                                <div class="col-lg-6 mb-4 mb-md-0">
-                                    <h2 class="font-weight-bold">MODULAR MUD TANK</h2>
-                                    <p>Can be operated from controls at tank with main on/off functionality at control panel Internal agitator to ensure most efficient mud yield Hopper and hootenanny for adding muds. Innovative design with simple construction. Modular – tank attaches to 10ft container locks. No chains/straps. Engineered – All lift points are rated and engineered with safety as the focus. The agitator and mud pump are contained in the unit and require no manual handling during shifting. Agitator and mud pump run off rig hydraulics so are reliable and effecient. .</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </section>
-			    <footer id="footer" class="bg-color-dark-200 custom-footer m-0">
+  <footer id="footer" class="bg-color-dark-200 custom-footer m-0">
                     <div class="container pt-5">
                         <div class="row text-center">
                             <div class="col">
